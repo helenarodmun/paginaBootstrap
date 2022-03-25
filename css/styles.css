@@ -1,0 +1,42 @@
+/*Programmer Helena Rodríguez
+Version 1
+Date 27/02/22*/
+
+
+html {
+    font-size: 16px;
+}
+@media screen and (max-width:480px){
+    
+   p { font-size: 0.8em;}
+}
+@media screen and (min-width:481px){
+    
+    p { font-size: 1em;}
+}
+@media screen and (min-width:1024px){
+    
+    p { font-size: 1.2em;}
+}
+
+.bg-card{
+    background-color: #dbddf1;
+}
+
+
+.card-border{
+    border: solid 5px grey;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+img{
+    max-width: 100%;
+}
+.gallery {
+    background-color: #dbddf1;
+    padding: 80px 0;
+}

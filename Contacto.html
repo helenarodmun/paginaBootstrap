@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Palabras claves, y descipción para el navegador-->
+    <meta name="keywords" content="Tiro con arco, Malpaisomys, Fuerteventura">
+    <meta name="description" content="Somos un el Club de Tiro con Arco Malpaisomys, establecido en el municipio de La Oliva, Fuerteventura, Islas Canarias">
+    <!--Icono Pestaña-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/android-chrome-256x256.png">
+    <link rel="manifest" href="./img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#fd5cfd">
+    <!--Compatibilidades-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-sscale=1.0">
+    <title>CLUB MALPAISOMYS</title>
+    <link rel="stylesheet" href="./css/stylesBotstrap.css">
+    <link rel="stylesheet" href="./css/styles.css ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <body>
+        <!-- header y navegador -->
+        <header class=" container-fluid p-5">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-3 border-bottom border-white">
+               <div class="container-fluid">
+                   <button type="button" class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#menunavegacion">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <a class="navbar-brand" href="#"></a>
+                   <img src="./img/logo.png" alt="logo" width="100" height="100">
+                       <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">    
+                           <li class="nav-items"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                           <li class="nav-items"><a class="nav-link" href="./AcercaDe.html">Quien somos</a></li>
+                           <li class="nav-items"><a class="nav-link" href="./Arcos.html">Tipos de arco</a></li>
+                           <li class="nav-items"><a class="nav-link" href="./Galeria.html">Galería</a></li>
+                           <li class="nav-items"><a class="nav-link" href="./Contacto.html">Contacto</a></li>
+                       </ul>
+                       <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success" type="button">Search</button>
+                      </form>
+                   </div>
+               </div>
+           </nav>
+       </header>
+        <main class="container  p-5">
+            <div class="row  p-5">
+                <div class="toast show m-5 text-center">
+                    <div class="toast-header">
+                      <strong class="me-auto">Aviso</strong>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                      <p>Por favor, asegúrese de rellenar todos los campos antes de validar el registro. Gracias</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="h1"><strong>Formulario de contacto</strong></p>
+                <form  action="Datos_contacto.php" method="POST" autocomplete="on">
+                    <legend>Datos Personales</legend>
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="f_nacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="f_nacimiento" name="edad" class="form-control" required>
+                    </div>
+                    <label for="browser" class="form-label">Seleccione género:</label>
+                    <div class="form-check">
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                        <label for="mujer">mujer</label>
+                    </div>   
+                    <div class="form-check">
+                        <input type="radio" id="hombre" name="genero" value="hombre">
+                        <label for="hombre">Hombre</label>
+                     </div>
+                     <div class="form-check">                            
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">otro</label>
+                    </div>         
+                    <label for="browser" class="form-label">Seleccione un Municipio:</label>
+                    <input class="form-control" list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="La Oliva">
+                        <option value="Puerto del Rosario">
+                        <option value="Betancuria">
+                        <option value="Antigua">
+                        <option value="Tuineje">
+                        <option value="Pájara">
+                    </datalist>
+                    <p class="mt-5">En el caso, de que tenga un arco, indique de que tipo:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="long" name="Tipo_arco" value="long">
+                        <label class="form-check-label" for="long">Longbow</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Tradicional" name="Tipo_arco" value="Tradicional">
+                        <label class="form-check-label" for="Tradicional">Tradicional</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="poleas" name="Tipo_arco" value="poleas">
+                        <label class="form-check-label" for="poleas">Poleas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="recurvo" name="Tipo_arco" value="recurvo">
+                        <label class="form-check-label" for="recurvo">Olímpico recurvo</label>
+                    </div>
+                    <p>Datos de registro:</p>
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label">Usuario:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                        <div class="valid-feedback">Validado.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <div class="valid-feedback">Validado.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo</div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                        <label class="form-check-label" for="myCheck">He leído y acepto la política de privacidad</label>
+                        <div class="valid-feedback">Validado.</div>
+                        <div class="invalid-feedback">Acepte la política de privacidad para poder continuar</div>
+                    </div>
+                    <div class="container mt-3">                  
+                        <label for="comment">Commentarios:</label>
+                        <textarea class="form-control" name="comentarios" rows="10" cols="50">
+                            Escriba aquí si quiere comentar, o hacer una sugerencia
+                        </textarea>
+                    </div>
+                    <div class="container mt-3 text-center"> 
+                        <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAviso">Registro</button>
+                    </div>
+                    <div class="modal" id="ModalAviso">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h4 class="modal-title">Aviso Registro</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Usted va a proceder al registro
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+           </div>
+        </main>
+        <footer class="container-fluid bg-dark text-white p-3">
+            <div class="row justify-content-around ">
+                <nav class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="#" class="col-3 text-reset d-flex align-items-center">
+                        <img src="./img/logo.png" alt="logo malpaisomys"class="navbar-brand mr-2" width="80px"  height="80px">
+                        Malpaisomys<br>malpaisomys@gmail.com
+                     </a>
+                </nav>
+                <ul class="col-sm-12 col-md-6 col-lg-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase m-2"><strong>Enlaces rápidos</strong></li>
+                    <li><a href="./index.html" class="text-reset">Inicio</a></li>
+                    <li><a href="./AcercaDe.html" class="text-reset">Quien somos</a></li>
+                    <li><a href="./arcos.html" class="text-reset">Tipos de arco</a></li>
+                    <li><a href="./contacto.html" class="text-reset">Contacto</a></li>
+                </ul>
+                <ul class="col-sm-12 col-md-6 col-lg-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase m-2"><strong>Redes Sociales</strong></li>
+                    <li><a href="#"><img src="./img/iconoFace.png" alt="Facebook" class="text-reset" style="width:30px;height:30px;">  Facebook</a></li>
+                    <li><a href="#"><img src="./img/iconoTwit.png" alt="Twiter" class="text-reset" style="width:30px;height:30px;">  Twiter</a></li>
+                    <li><a href="#"><img src="./img/iconoWhat.png" alt="Whatsapp" class="text-reset" style="width:30px;height:30px;"> Whatsapp</a></li>
+                    <li><a href="#"><img src="./img/iconoInsta.png" alt="Instagram" class="text-reset" style="width:30px;height:30px;">  Instagram</a></li>
+                    <li><a href="#"><img src="./img/iconoYouT.png" alt="Youtube" class="text-reset" style="width:30px;height:30px;">  Youtube</a></li>
+                </ul>
+            </div>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+        </footer>
+        <!--Aquí los Scripts-->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
